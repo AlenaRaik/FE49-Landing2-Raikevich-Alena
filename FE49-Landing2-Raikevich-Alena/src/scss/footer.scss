@@ -1,0 +1,37 @@
+.section-footer{
+    padding: 24px 0;
+    background-color: #2C3154;
+    
+}
+.footer-description{
+    width: 370px;
+    margin: auto;
+}
+.footer-text{
+    color: #808080;
+    text-align: center;
+    font-size: $_18px;
+    font-weight: 400;
+    line-height: $_21px;
+    text-transform: capitalize;
+
+    &::after{
+        content: ' by Kamal Chaneman';
+        color: $_white;
+    }
+    @media (max-width:1024px){
+        font-size: 14px;
+        line-height: 16px;
+    }
+    @media (max-width:500px){
+        width: 280px;
+    }
+
+    @media (max-width:350px){
+        width: 250px;
+    }
+    @media (max-width:320px){
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

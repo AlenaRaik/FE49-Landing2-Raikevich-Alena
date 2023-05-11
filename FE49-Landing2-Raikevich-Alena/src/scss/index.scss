@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@import "../scss/_var.scss";
+@import "../scss/cdn";
+@import "../scss/features.scss";
+@import "../scss/header.scss";
+@import "../scss/carousel.scss";
+@import "../scss/download.scss";
+@import "../scss/contact.scss";
+@import "../scss/footer.scss";
+@import "../scss/works.scss";
+@import "../scss/team.scss";
+
+.container {
+    max-width: 1170px;
+    padding: 0 50px;
+    margin: auto;
+    z-index: 20;
+    position: relative;
+    --bs-gutter-x: 0;
+
+}
+p {
+    margin-bottom: 0;
+}
+ul {
+    padding-left: 0;
+}
+html {
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+
+.button {
+    width: 370px;
+    color: $_white;
+    line-height: 80px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: $_red_bnormal;
+    text-transform: uppercase;
+    font-size: $_24px;
+    font-weight: 900;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $_red_bhover;
+    }
+
+    &:active{
+        background-color: $_red_bnormal;
+        box-shadow: 4px 4px 30px $_red_bnormal;
+    }
+@media (max-width:917px){
+    width: 314px;
+}
+@media (max-width:600px){
+    width: 290px;
+}
+@media (max-width:450px){
+    width: 280px;
+}
+@media (max-width:370px){
+    width: 230px;
+}
+}
+
