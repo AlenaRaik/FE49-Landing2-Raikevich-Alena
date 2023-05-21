@@ -1,0 +1,140 @@
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img{
+    width: 58%;
+    object-fit: cover;
+  }
+  .swiper{
+    width: 100%;
+    height: 100%;
+  }
+
+:root {
+    --swiper-theme-color: #aeaeb7;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+ background-color: #aeaeb7;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: #babbc5;
+}
+
+.swiper-pagination {
+     position:relative;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap,10px);
+}
+
+
+.carousel-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5C3249;
+    margin-bottom: 20px;
+    @media (max-width:820px){
+        display: block;
+    }
+    }
+    .carousel-wrapn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #32415c;
+        @media (max-width:820px){
+            display: block;
+        }
+        }
+    .carousel-img{
+        width: 50%;
+        height: 420px;
+        img{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            object-fit: cover;
+            object-position: center;
+        }
+        @media (max-width:820px){
+            width: 100%;
+            
+        }
+    }
+    .carousel-text{
+        width: 50%;
+        height: 100%;
+        color: $_white;
+        padding: 0 130px;
+        @media (max-width:1064px){
+            padding: 0 100px;
+        }
+        @media (max-width:935px){
+            padding: 0 80px;
+        }
+        .carousel-description{
+            font-size: $_36px;
+            font-family: 'Cardo';
+            font-style: italic;
+            line-height: 49px;
+            text-transform: capitalize;
+    
+            @media (max-width:1064px){
+                font-size: 32px;
+                line-height: 40px;
+            }
+            @media (max-width:935px){
+                font-size: 28px;
+                line-height: 35px;
+            }
+            @media (max-width:820px){
+                margin-bottom: 20px;
+            }
+            @media (max-width:935px){
+                font-size: 28px;
+                line-height: 35px;
+            }
+            @media (max-width:320px){
+                font-size: 24px;
+                line-height: 32px;
+            }
+    
+        }
+        .carousel-name{
+            font-size: $_13px;
+            line-height: $_15px;
+            text-transform: uppercase;
+            @media (max-width:1024px){
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    
+        @media (max-width:820px){
+            width: 80%;
+            margin: auto;
+            padding: 30px 50px;
+            text-align: center;
+        }
+    }
+    
+    @media (max-width:820px){
+    .swiper-button-next{
+        display: none;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
+    }
+    
+    
