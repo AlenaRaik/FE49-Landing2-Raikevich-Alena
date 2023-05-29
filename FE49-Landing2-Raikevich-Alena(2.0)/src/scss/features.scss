@@ -1,6 +1,9 @@
 .features {
-    padding: 116px 0 50px;
+    padding: 116px 0 0;
     background: $_white;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
 }
 
 .features-card {

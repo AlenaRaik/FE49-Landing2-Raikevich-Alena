@@ -6,7 +6,8 @@
     display: grid;
     grid-gap: 0;
     grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(auto-fill, 24%);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 15px;
     
     @media (max-width:1020px){
         justify-content: center;
@@ -17,7 +18,7 @@
     }
 }
 .team-card{
-    padding: 0 1px;
+    margin-bottom: 4rem;
 }
 .team-card__img{
     display: flex;
@@ -52,7 +53,22 @@
         line-height: $_21px;
         text-transform: uppercase;
         color: #FF4343;
-
+        @media (max-width:1095px){
+            font-size: $_15px;
+            line-height: $_18px;
+        }
+        @media (max-width:1020px){
+            font-size: $_18px;
+            line-height: $_21px;
+        }
+        @media (max-width:603px){
+            font-size: $_15px;
+            line-height: $_18px;
+        }
+        @media (max-width:540px){
+            font-size: $_18px;
+            line-height: $_21px;
+        }
     }
 }
 
@@ -75,7 +91,6 @@
     flex-direction: row;
     display: flex;
     margin: 0 -0.5rem;
-    margin-bottom: $_64px;
     li{
         display: flex;
         width: 2.5rem;

@@ -10,7 +10,6 @@
 
 header {
   z-index: 1;
-  height: 100vh;
   background-image: url("bg-banner.b57f0da6.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -29,6 +28,12 @@ header:after {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (width <= 934px) {
+  header {
+    height: 100vh;
+  }
 }
 
 .open {
@@ -553,8 +558,9 @@ header:after {
 
 .team-wrap {
   grid-gap: 0;
+  grid-column-gap: 15px;
   grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: repeat(auto-fill, 24%);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   display: grid;
 }
 
@@ -572,7 +578,7 @@ header:after {
 }
 
 .team-card {
-  padding: 0 1px;
+  margin-bottom: 4rem;
 }
 
 .team-card__img {
@@ -611,6 +617,34 @@ header:after {
   line-height: 1.3125rem;
 }
 
+@media (width <= 1095px) {
+  .team-card__job span {
+    font-size: .9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (width <= 1020px) {
+  .team-card__job span {
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+  }
+}
+
+@media (width <= 603px) {
+  .team-card__job span {
+    font-size: .9375rem;
+    line-height: 1.125rem;
+  }
+}
+
+@media (width <= 540px) {
+  .team-card__job span {
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+  }
+}
+
 .team-card__description {
   margin-bottom: 2.25rem;
 }
@@ -629,7 +663,7 @@ header:after {
 
 .team-list {
   flex-direction: row;
-  margin: 0 -.5rem 4rem;
+  margin: 0 -.5rem;
   display: flex;
 }
 
@@ -657,8 +691,11 @@ header:after {
 }
 
 .features {
+  object-fit: cover;
+  object-position: center;
   background: #fff;
-  padding: 116px 0 50px;
+  padding: 116px 0 0;
+  overflow: hidden;
 }
 
 .features-card {
